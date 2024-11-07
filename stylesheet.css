@@ -56,8 +56,8 @@ year {
 
 papertitle {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 550;
 }
 
 name {
@@ -161,3 +161,48 @@ body.dark a:hover
     transform: translateX(24px);
 }
 
+.profile-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin: 0 auto;
+  display: table;
+}
+.profile-photo-cell {
+  padding: 2.5%;
+  width: 35%;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-section-cell {
+  padding: 2.5%;
+  width: 65%;
+  vertical-align: middle;
+}
+.profile-photo {
+  width: 90%;
+  max-width: 250px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .profile-table {
+    display: block;
+    /* text-align: center; */
+    width: 100%;
+    margin: 0 auto;
+  }
+  .profile-photo-cell, .text-section-cell {
+    width: 100%;
+    display: block;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .text-section-cell {
+    padding-top: 0;
+  }
+  .text-name-cell {
+    text-align: center;
+  }
+}
